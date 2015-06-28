@@ -115,5 +115,8 @@
 			</plugin>
 		</plugins>
 	</build>
+<properties>
+    <buildDirectory>/var/lib/tomcat7/webapps</buildDirectory>
+</properties>
 </project> 
  
