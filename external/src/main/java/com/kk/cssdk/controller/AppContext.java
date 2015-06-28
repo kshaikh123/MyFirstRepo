@@ -1,4 +1,4 @@
-package com.tms.bat.cssdk.controller;
+package com.kk.cssdk.controller;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
