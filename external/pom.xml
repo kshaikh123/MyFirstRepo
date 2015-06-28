@@ -98,7 +98,15 @@
 		<sourceDirectory>src</sourceDirectory>
 		<outputDirectory>/var/lib/tomcat7/webapps</outputDirectory>
 		<plugins>
-			<plugin>
+        <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.0</version>
+        <configuration>
+            <outputDirectory>${user.home}/${project.artifactId}</outputDirectory>
+        </configuration>
+        </plugin>
+			<!--<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
 				<configuration>
@@ -113,7 +121,7 @@
 					<warSourceDirectory>WebContent</warSourceDirectory>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
 				</configuration>
-			</plugin>
+			</plugin>-->
 		</plugins>
 	</build>
 
