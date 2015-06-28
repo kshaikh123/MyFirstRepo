@@ -6,9 +6,7 @@
   <artifactId>external</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
- <configuration>
-            <outputDirectory>/var/lib/tomcat7/webapps</outputDirectory>
-        </configuration>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -98,6 +96,7 @@
 	</dependencies>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
+		<outputDirectory>/var/lib/tomcat7/webapps</outputDirectory>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -117,8 +116,6 @@
 			</plugin>
 		</plugins>
 	</build>
-<properties>
-    <buildDirectory>/var/lib/tomcat7/webapps</buildDirectory>
-</properties>
+
 </project> 
  
